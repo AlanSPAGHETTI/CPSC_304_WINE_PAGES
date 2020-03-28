@@ -1,0 +1,96 @@
+img {
+	width: 30%;
+	float: left;
+	margin: 1.66%;
+}
+
+p {
+	font-family: Poppins;
+	margin-left: 1.66%;
+	font-size: 25px;
+	font-weight: 600;
+	color: #590d08;
+	text-transform: uppercase;
+	border-bottom: 3px solid #593f2a;
+	width: 24%;
+	padding-bottom: 15px;
+}
+
+p:hover {
+	color: #c7a5a3;
+}
+
+p span {
+	text-transform: none;
+	color: gray;
+}
+
+
+ h1 {
+ 	font-family: 'Open Sans', sans-serif;
+  margin-left: 1.66%;
+ }
+
+ .FormTitle {
+  width: 50%;
+  text-align: left;
+ }
+ .OutputTitle {
+  width: 50%;
+  text-align: right;
+ }
+
+form {
+    font-family: 'Open Sans', sans-serif;
+  	margin-left: 1.66%;
+    width: 50%;
+}
+
+form button:hover {
+  background-color: lightblue;
+}
+
+body {
+	background-image: url('https://wallsdesk.com/wp-content/uploads/2016/10/Wine-HD-Wallpaper.jpg');
+    background-size: cover;
+    background-origin: center;
+}
+
+.topnav {
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+  background-color: #e9e9e9;
+  width: 90%;
+  margin-left: 1.66%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #274a09;
+  color: white;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+
