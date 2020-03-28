@@ -34,6 +34,7 @@ border-bottom: 3px solid #593f2a;
   width:  50px;
   border-bottom: none;
   margin-top: -9px;
+  border-radius: 50%;
 }
 
 .header p:hover {
