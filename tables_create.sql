@@ -52,3 +52,11 @@ CREATE TABLE GRAPE(
     GrapeSize  VARCHAR(255) NOT NULL,
     GrapeColor VARCHAR(255) NOT NULL
 );
+
+CREATE TABLE STORAGE(
+    StorageID      INT          PRIMARY KEY AUTO_INCREMENT,
+    StorageName    VARCHAR(255) NOT NULL,
+    StorageAddress VARCHAR(255) NOT NULL,
+    RackNumber     INT,
+    AisleNumber    INT
+);
