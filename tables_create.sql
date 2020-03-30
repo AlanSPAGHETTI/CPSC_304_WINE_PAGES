@@ -38,3 +38,19 @@ CREATE TABLE WINERY
     WineryID   INT          PRIMARY KEY AUTO_INCREMENT,
     WineryName VARCHAR(255) NOT NULL
 );
+
+# The following commands handles creation of secondary tables
+CREATE TABLE WINERY_REP
+(
+    WineryRepID   INT          PRIMARY KEY AUTO_INCREMENT,
+    WineryRepName VARCHAR(255) NOT NULL,
+    WineryID      INT          REFERENCES WINERY(WineryID) NOT NULL ON DELETE RESTRICT
+);
+
+CREATE TABLE WINERY_BRANCH
+(
+    WineryBranchID      INT          PRIMARY KEY AUTO_INCREMENT,
+    WineryBranchName    VARCHAR(255) NOT NULL,
+    WineryBranchAddress VARCHAR(255) NOT NULL,
+    WineryID            INT          REFERENCES WINERY(WineryID) NOT NULL ON DELETE RESTRICT
+);
