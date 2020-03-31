@@ -39,8 +39,9 @@ CREATE TABLE QUALITY
 
 CREATE TABLE WINERY
 (
-    WineryID   INT          PRIMARY KEY AUTO_INCREMENT,
-    WineryName VARCHAR(255) NOT NULL
+    WineryID   INT          NOT NULL,
+    WineryName VARCHAR(255) NOT NULL,
+    PRIMARY KEY (WineryID)
 );
 
 # The following commands handles creation of secondary tables
