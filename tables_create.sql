@@ -55,10 +55,11 @@ CREATE TABLE WINERY_REP
 
 CREATE TABLE WINERY_BRANCH
 (
-    WineryBranchID      INT          PRIMARY KEY AUTO_INCREMENT,
+    WineryBranchID      INT          NOT NULL,
     WineryBranchName    VARCHAR(255) NOT NULL,
     WineryBranchAddress VARCHAR(255) NOT NULL,
-    WineryID            INT          REFERENCES WINERY(WineryID) NOT NULL ON DELETE RESTRICT
+    WineryID            INT          REFERENCES WINERY(WineryID) ON DELETE RESTRICT NOT NULL,
+    PRIMARY KEY (WineryBranchID)
 );
 
 # The following commands handles creation of tertiary tables
