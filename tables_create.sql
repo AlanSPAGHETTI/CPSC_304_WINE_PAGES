@@ -29,11 +29,12 @@ CREATE TABLE STORAGE
 
 CREATE TABLE QUALITY
 (
-    QualityID     INT          PRIMARY KEY AUTO_INCREMENT,
+    QualityID     INT          NOT NULL,
     QualityName   VARCHAR(255) NOT NULL,
     QualityAroma  VARCHAR(255) NOT NULL,
     QualityColor  VARCHAR(255) NOT NULL,
-    QualityFlavor VARCHAR(255) NOT NULL
+    QualityFlavor VARCHAR(255) NOT NULL,
+    PRIMARY KEY (QualityID)
 );
 
 CREATE TABLE WINERY
