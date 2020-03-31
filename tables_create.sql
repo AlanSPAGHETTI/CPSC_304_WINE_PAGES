@@ -19,11 +19,12 @@ CREATE TABLE GRAPE
 
 CREATE TABLE STORAGE
 (
-    StorageID      INT          PRIMARY KEY AUTO_INCREMENT,
+    StorageID      INT          NOT NULL,
     StorageName    VARCHAR(255) NOT NULL,
     StorageAddress VARCHAR(255) NOT NULL,
     RackNumber     INT,
-    AisleNumber    INT
+    AisleNumber    INT,
+    PRIMARY KEY (StorageID)
 );
 
 CREATE TABLE QUALITY
