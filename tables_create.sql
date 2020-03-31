@@ -47,9 +47,10 @@ CREATE TABLE WINERY
 # The following commands handles creation of secondary tables
 CREATE TABLE WINERY_REP
 (
-    WineryRepID   INT          PRIMARY KEY AUTO_INCREMENT,
+    WineryRepID   INT          NOT NULL,
     WineryRepName VARCHAR(255) NOT NULL,
-    WineryID      INT          REFERENCES WINERY(WineryID) NOT NULL ON DELETE RESTRICT
+    WineryID      INT          REFERENCES WINERY(WineryID) ON DELETE RESTRICT NOT NULL,
+    PRIMARY KEY (WineryRepID)
 );
 
 CREATE TABLE WINERY_BRANCH
