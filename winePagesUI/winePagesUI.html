@@ -18,23 +18,61 @@
   <a href="uiFavourite.html">Favourites</a>
   <a href="uiAdmin.html">Administrator's Page</a>
 </div>
+
 <h1 class="FormTitle">Browse our local wines!</h1>
+ <h3>Suggestion 1 (temporary placeholder)</h3>
 	<form class="Search" id="SearchByFlavour">
-		<h5>Search by flavour:</h5>
+		<label>Search by Flavour:</label>
 		<input type="test" name="Query" placeholder="Type in a flavour....">
 		<button>Search</button>
 	</form>
 	<form class="Search" id="SearchByWinery">
-		<h5>Search by Winery name:</h5>
+		<label>Search by Winery Name:</label>
 		<input type="test" name="Query" placeholder="Type in a name....">
 		<button>Search</button>
 	</form>
 	<form class="Search" id="SearchByWineryLocation">
-		<h5>Search by Winery location:</h5>
-		<input type="test" name="Query" placeholder="Type in a name....">
+		<label>Search by Winery Location:</label>
+		<input type="test" name="Query" placeholder="Type in a location....">
 		<button>Search</button>
 	</form>
-<h1 class="FormTitle">Output</h1>
+
+     <h3>Suggestion 2 (temporary placeholder)</h3>
+	<form class="Search" id="AlternateSearch">
+
+		<div>
+			<label for="Keyword">Keyword:</label>
+			<input type="text" name="Keyword" placeholder="Keyword">
+		</div>
+
+		<div>
+			<label for="Red">Red Wine</label>
+			<input id="Red" type="radio" name="Color" value="Red" required>
+			<label for="White">White Wine</label>
+			<input id="White" type="radio" name="Color" value="White" required>
+		</div>
+		<div>
+			<label for="WineryName">Winery Name:</label>
+			<select name="WineryName">
+				<option>Winery</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+			<label for="WineryLocation">Winery Location:</label>
+			<select name="Location">
+				<option>Location</option>
+				<option>BC</option>
+				<option>AB</option>
+				<option>MB</option>
+				<option>SK</option>
+				<option>ON</option>
+				<option>QC</option>
+			</select>
+		</div>
+		<button>Search</button>
+	</form>
+<h1 class="FormTitle">Output (or redirect to a new page)</h1>
 <textarea class="output" rows="4" cols="50" placeholder="Query output will magically appear here..."></textarea>
 </body>
 </html>
