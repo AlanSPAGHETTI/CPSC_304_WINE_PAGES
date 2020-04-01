@@ -119,4 +119,18 @@ body {
   font-size: 17px;
 }
 
+.Search1 {
+  background-color: #b8ae8a;
+  padding: 6px;
+}
+
+.Search2 {
+  background-color: #b8ae8a;
+  padding: 6px;
+  border: 2px solid grey;
+}
+
+h3{
+  margin-left: 1.66%;
+}
 
