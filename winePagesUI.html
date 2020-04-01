@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Wine Pages</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="winePagesUI.css">
+	<link rel="icon" type="image/ico" href="logo.png" />
+</head>
+<body>
+	<div class="header">
+	<p><span>Wine / Pages <span>| CPSC 304</span><span><img src="logo.png"></p>
+    </div>
+
+  <div class="topnav">
+  <a class="active" href="winePagesUI.html">Home</a>
+  <form class="searchbox" id="searchbox" action="searchbox_results.php">
+  	<input type="text" placeholder="Search our local wines...">
+  	<button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+  <a href="uiRegistration.html">Customer Registration</a>
+  <a href="uiFavourite.html">Favourites</a>
+  <a href="uiAdmin.html">Administrator's Page</a>
+</div>
+
+<h1 class="FormTitle">Browse our local wines!</h1>
+	<form class="Search2" id="AlternateSearch">
+
+		<div>
+			<label for="Keyword">Keyword:</label>
+			<input type="text" name="Keyword" placeholder="Keyword">
+		</div>
+         <div>
+			<label for="StoreLoaction">Retailer Location:</label>
+			<input type="text" name="RetilerLocation" placeholder="Store location (city)...">
+		</div>
+		<div>
+			<label for="Red">Red Wine</label>
+			<input id="Red" type="radio" name="Color" value="Red" required>
+			<label for="White">White Wine</label>
+			<input id="White" type="radio" name="Color" value="White" required>
+		</div>
+		<div>
+			<label for="WineryName">Winery Name:</label>
+			<select name="WineryName">
+				<option>Winery</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+			<label for="WineryLocation">Winery Location:</label>
+			<select name="Location">
+				<option>Location</option>
+				<option>BC</option>
+				<option>AB</option>
+				<option>MB</option>
+				<option>SK</option>
+				<option>ON</option>
+				<option>QC</option>
+				<option>NS</option>
+				<option>PEI</option>
+				<option>NF</option>
+			</select>
+		</div>
+		<button>Search</button>
+	</form>
+</body>
+</html>
