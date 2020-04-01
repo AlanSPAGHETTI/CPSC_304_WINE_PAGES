@@ -111,10 +111,11 @@ body {
 }
 
 .topnav input[type=text] {
-  float: right;
+  float: left;
   padding: 6px;
   margin-top: 8px;
   margin-right: 16px;
+  margin-left: 16px;
   border: none;
   font-size: 17px;
 }
@@ -134,3 +135,16 @@ h3{
   margin-left: 1.66%;
 }
 
+.searchbox button {
+ float: left;
+ margin-top: 8px;
+ margin-left: -16px;
+ background:none;
+ border:0;
+ padding: 8px;
+ background: gray;
+}
+
+.searchbox button:hover {
+  background: #ccc;
+}

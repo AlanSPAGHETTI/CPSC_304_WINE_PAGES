@@ -4,6 +4,7 @@
 	<title>The Wine Pages</title>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="winePagesUI.css">
 	<link rel="icon" type="image/ico" href="logo.png" />
 </head>
@@ -14,30 +15,16 @@
 
   <div class="topnav">
   <a class="active" href="winePagesUI.html">Home</a>
+  <form class="searchbox" id="searchbox">
+  	<input type="text" placeholder="Search our local wines...">
+  	<button type="submit"><i class="fa fa-search"></i></button>
+  </form>
   <a href="uiRegistration.html">Customer Registration</a>
   <a href="uiFavourite.html">Favourites</a>
   <a href="uiAdmin.html">Administrator's Page</a>
 </div>
 
 <h1 class="FormTitle">Browse our local wines!</h1>
- <h3>Suggestion 1 (temporary placeholder)</h3>
-	<form class="Search1" id="SearchByFlavour">
-		<label>Search by Flavour:</label>
-		<input type="test" name="Query" placeholder="Type in a flavour....">
-		<button>Search</button>
-	</form>
-	<form class="Search1" id="SearchByWinery">
-		<label>Search by Winery Name:</label>
-		<input type="test" name="Query" placeholder="Type in a name....">
-		<button>Search</button>
-	</form>
-	<form class="Search1" id="SearchByWineryLocation">
-		<label>Search by Winery Location:</label>
-		<input type="test" name="Query" placeholder="Type in a location....">
-		<button>Search</button>
-	</form>
-
-     <h3>Suggestion 2 (temporary placeholder)</h3>
 	<form class="Search2" id="AlternateSearch">
 
 		<div>
@@ -78,7 +65,5 @@
 		</div>
 		<button>Search</button>
 	</form>
-<h1 class="FormTitle">Output (or redirect to a new page)</h1>
-<textarea class="output" rows="4" cols="50" placeholder="Query output will magically appear here..."></textarea>
 </body>
 </html>
