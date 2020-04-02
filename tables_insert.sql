@@ -64,3 +64,20 @@ VALUES (4, "Zinfandel",      "Licorice and Smoke",    "Red",     "Blueberry and 
 
 INSERT INTO QUALITY
 VALUES (5, "Riesling",       "Honey and Ginger",      "Yellow",  "Lemon and Pineapple");
+
+
+
+INSERT INTO WINERY
+VALUES (1, "St. Hubertus & Oak Bay Estate");
+
+INSERT INTO WINERY
+VALUES (2, "Gehringer Brothers Estate");
+
+INSERT INTO WINERY
+VALUES (3, "King Estate Suppliers");
+
+INSERT INTO WINERY
+VALUES (4, "The Durell Vineyard");
+
+INSERT INTO WINERY
+VALUES (5, "Chateau Montelena Estate");
