@@ -47,3 +47,20 @@ VALUES (4, "Durell Warehouse",  "1429 Tubbs Lane",   400, NULL);
 
 INSERT INTO STORAGE
 VALUES (5, "Chateau Warehouse", "50 Pender Street",  500, NULL);
+
+
+
+INSERT INTO QUALITY
+VALUES (1, "Gewurztraminer", "Lychee and Grapefruit", "Gold",    "Lychee and Pineapple");
+
+INSERT INTO QUALITY
+VALUES (2, "Riesling",       "Honey and Ginger",      "Yellow",  "Lemon and Pineapple");
+
+INSERT INTO QUALITY
+VALUES (3, "Pinot Noir",     "Cherry and Raspberry",  "Crimson", "Cherry and Vanilla");
+
+INSERT INTO QUALITY
+VALUES (4, "Chardonnay",     "Apple and Lemon",       "Gold",    "Apple and Pineapple");
+
+INSERT INTO QUALITY
+VALUES (5, "Zinfandel",      "Licorice and Smoke",    "Red",     "Blueberry and Black Pepper");
