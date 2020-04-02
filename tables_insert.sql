@@ -30,3 +30,20 @@ VALUES (4, "Zinfandel",      "Medium", "Black");
 
 INSERT INTO GRAPE
 VALUES (5, "Riesling",       "Small",  "Green");
+
+
+
+INSERT INTO STORAGE
+VALUES (1, "BC Liquor",         "3313 Shrum Lane",   NULL, 10);
+
+INSERT INTO STORAGE
+VALUES (2, "Wines and More",    "1945 Fender Road",  NULL, 20);
+
+INSERT INTO STORAGE
+VALUES (3, "Oak Bay Warehouse", "5205 Lakeshore Rd", 300, NULL);
+
+INSERT INTO STORAGE
+VALUES (4, "Durell Warehouse",  "1429 Tubbs Lane",   400, NULL);
+
+INSERT INTO STORAGE
+VALUES (5, "Chateau Warehouse", "50 Pender Street",  500, NULL);
