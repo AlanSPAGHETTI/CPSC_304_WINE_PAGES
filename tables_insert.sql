@@ -17,19 +17,34 @@ VALUES (5, "Anton S Newton",  "691 Haaglund Rd, Texas",           65);
 
 
 INSERT INTO GRAPE
-VALUES (1, "Gewurztraminer", "Large",  "Red");
+VALUES (1001, "Harissa Gewurztraminer", "Large",  "Red");
 
 INSERT INTO GRAPE
-VALUES (2, "Pinot Noir",     "Large",  "Purple");
+VALUES (1002, "Soccano Gewurztraminer", "Large",  "Red");
 
 INSERT INTO GRAPE
-VALUES (3, "Chardonnay",     "Medium", "Green");
+VALUES (2001, "Grouse Pinot Noir",      "Large",  "Purple");
 
 INSERT INTO GRAPE
-VALUES (4, "Zinfandel",      "Medium", "Black");
+VALUES (2002, "Napoli Pinot Noir",      "Large",  "Purple");
 
 INSERT INTO GRAPE
-VALUES (5, "Riesling",       "Small",  "Green");
+VALUES (3001, "White Chardonnay",       "Medium", "Green");
+
+INSERT INTO GRAPE
+VALUES (3002, "Olive Chardonnay",       "Medium", "Green");
+
+INSERT INTO GRAPE
+VALUES (4001, "Haddock Zinfandel",      "Medium", "Black");
+
+INSERT INTO GRAPE
+VALUES (4002, "Planter Zinfandel",      "Medium", "Black");
+
+INSERT INTO GRAPE
+VALUES (5001, "Hogget Riesling",        "Small",  "Green");
+
+INSERT INTO GRAPE
+VALUES (5002, "Vindal Riesling",        "Small",  "Green");
 
 
 
