@@ -81,3 +81,36 @@ VALUES (4, "The Durell Vineyard");
 
 INSERT INTO WINERY
 VALUES (5, "Chateau Montelena Estate");
+
+
+
+# The following commands handles insertion of secondary tables
+INSERT INTO WINERY_REP
+VALUES (1001, "Brandon Hubertus", 1);
+
+INSERT INTO WINERY_REP
+VALUES (1002, "Jackson Hubertus", 1);
+
+INSERT INTO WINERY_REP
+VALUES (2001, "John Gehringer", 2);
+
+INSERT INTO WINERY_REP
+VALUES (2002, "Alan Gehringer", 2);
+
+INSERT INTO WINERY_REP
+VALUES (3001, "Steve King", 3);
+
+INSERT INTO WINERY_REP
+VALUES (3002, "April King", 3);
+
+INSERT INTO WINERY_REP
+VALUES (4001, "Bob Durell", 4);
+
+INSERT INTO WINERY_REP
+VALUES (4002, "Tim Durell", 4);
+
+INSERT INTO WINERY_REP
+VALUES (5001, "Jessica Montelena", 5);
+
+INSERT INTO WINERY_REP
+VALUES (5002, "Britany Montelena", 5);
