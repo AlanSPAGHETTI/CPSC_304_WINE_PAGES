@@ -71,8 +71,16 @@ form {
     width: 50%;
 }
 
-form button:hover {
-  background-color: lightblue;
+.Search2 button {
+ border-width: 2px;
+ border-color: transparent;
+ border-radius: 4px;
+ margin: 4px;
+}
+
+.Search2 button:hover {
+	border: 2px solid #4d6e53;
+	border-radius: 4px;
 }
 
 body {
