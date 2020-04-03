@@ -114,3 +114,35 @@ VALUES (5001, "Jessica Montelena", 5);
 
 INSERT INTO WINERY_REP
 VALUES (5002, "Britany Montelena", 5);
+
+
+
+INSERT INTO WINERY_BRANCH
+VALUES (1001, "Canadian Branch", "1588 Brand Road", 1);
+
+INSERT INTO WINERY_BRANCH
+VALUES (1002, "American Branch", "1432 Levin Road", 1);
+
+INSERT INTO WINERY_BRANCH
+VALUES (2001, "British Branch", "842 Rue Levy", 2);
+
+INSERT INTO WINERY_BRANCH
+VALUES (2002, "Spanish Branch", "315 Ivy Levy", 2);
+
+INSERT INTO WINERY_BRANCH
+VALUES (3001, "Canadian Branch", "3785 Carlson Road", 3);
+
+INSERT INTO WINERY_BRANCH
+VALUES (3002, "American Branch", "9821 Jameson Road", 3);
+
+INSERT INTO WINERY_BRANCH
+VALUES (4001, "British Branch", "213 Bag Levy", 4);
+
+INSERT INTO WINERY_BRANCH
+VALUES (4002, "Spanish Branch", "876 Don Levy", 4);
+
+INSERT INTO WINERY_BRANCH
+VALUES (5001, "Canadian Branch", "7685 Tycos Road", 5);
+
+INSERT INTO WINERY_BRANCH
+VALUES (5002, "American Branch", "2554 Damer Road", 5);
