@@ -198,10 +198,10 @@ VALUES (5002, 5, 2002, 1584230400);
 
 
 INSERT INTO WINE
-VALUES (1001, 1, "Great White North", 2017, "32.99", "13.00");
+VALUES (1001, 1, "Great White Gewurztraminer", 2017, "32.99", "13.00");
 
 INSERT INTO WINE
-VALUES (1002, 1, "Great White South", 2018, "32.99", "15.00");
+VALUES (1002, 1, "Great White Gewurztraminer", 2018, "32.99", "15.00");
 
 INSERT INTO WINE
 VALUES (2001, 2, "Regular Pinot Noir", 1950, "55.99", "14.30");
