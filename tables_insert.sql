@@ -66,19 +66,19 @@ VALUES (5, "Chateau Warehouse", "50 Pender Street",  500, NULL);
 
 
 INSERT INTO QUALITY
-VALUES (1, "Gewurztraminer", "Fruity", "Gold",    "Lychee and Pineapple");
+VALUES (1, "Gewurztraminer", "Fruity", "Gold",    "Citrus, Lychee, Pineapple");
 
 INSERT INTO QUALITY
-VALUES (2, "Pinot Noir",     "Fruity", "Crimson", "Cherry and Vanilla");
+VALUES (2, "Pinot Noir",     "Fruity", "Crimson", "Citrus, Cherry, Vanilla");
 
 INSERT INTO QUALITY
-VALUES (3, "Chardonnay",     "Fruity", "Gold",    "Apple and Pineapple");
+VALUES (3, "Chardonnay",     "Fruity", "Gold",    "Citrus, Orange, Raspberry");
 
 INSERT INTO QUALITY
-VALUES (4, "Zinfandel",      "Earthy", "Red",     "Blueberry and Black Pepper");
+VALUES (4, "Zinfandel",      "Earthy", "Red",     "Cedar, Butter, Black Pepper");
 
 INSERT INTO QUALITY
-VALUES (5, "Riesling",       "Earthy", "Yellow",  "Lemon and Pineapple");
+VALUES (5, "Riesling",       "Earthy", "Yellow",  "Cedar, Butter, Licorice");
 
 
 
