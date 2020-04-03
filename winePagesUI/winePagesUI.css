@@ -85,8 +85,8 @@ form {
 
 body {
 	background-image: url('uiBackground.jpg');
+	background-color: #736e58;
     background-size: cover;
-    background-origin: center;
 }
 
 .topnav {
@@ -137,6 +137,7 @@ body {
   background-color: #b8ae8a;
   padding: 6px;
   border: 2px solid grey;
+  opacity: 0.8;
 }
 
 h3{
