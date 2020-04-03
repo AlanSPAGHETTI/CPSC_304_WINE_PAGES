@@ -179,3 +179,35 @@ VALUES (5001, 5, 2001, 1583798400);
 
 INSERT INTO FAVORITE
 VALUES (5002, 5, 2002, 1584230400);
+
+
+
+INSERT INTO WINE
+VALUES (1001, 1, "Great White North", 2017, "32.99", "13.00");
+
+INSERT INTO WINE
+VALUES (1002, 1, "Great White South", 2018, "32.99", "15.00");
+
+INSERT INTO WINE
+VALUES (2001, 2, "Regular Pinot Noir", 1950, "55.99", "14.30");
+
+INSERT INTO WINE
+VALUES (2002, 2, "Premium Pinot Noir", 1920, "75.99", "14.30");
+
+INSERT INTO WINE
+VALUES (3001, 3, "Two Sticks Chardonnay", 2016, "24.99", "14.50");
+
+INSERT INTO WINE
+VALUES (3002, 3, "Six Sticks Chardonnay", 2017, "26.99", "14.50");
+
+INSERT INTO WINE
+VALUES (4001, 4, "Calistoga Zinfandel", 2014, "40.99", "12.30");
+
+INSERT INTO WINE
+VALUES (4002, 4, "Montengro Zinfandel", 2015, "40.99", "12.30");
+
+INSERT INTO WINE
+VALUES (5001, 5, "Classic Riesling", 1995, "150.99", "13.10");
+
+INSERT INTO WINE
+VALUES (5002, 5, "Refined Riesling", 1996, "175.99", "13.10");
