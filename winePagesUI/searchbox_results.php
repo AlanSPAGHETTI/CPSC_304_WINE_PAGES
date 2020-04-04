@@ -32,7 +32,13 @@
   <a href="uiAdmin.php">Administrator's Page</a>
 </div>
 	<h1>Your Search Results For: <?php echo "'" . "$keyword" . "'"; ?></h1>
-
+<?php if ($resultCheck == 0) 
+	{
+?>	
+	 <h3>Sorry, we could not find anything matching your query.</h3>
+<?php
+	} 
+?>
 	<table class="searchboxtable" align="left">
 		<tr>
 			<th>Name</th>
