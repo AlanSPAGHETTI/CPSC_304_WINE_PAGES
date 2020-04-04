@@ -57,6 +57,27 @@
 
 		<button>Submit</button>
 	</form>	
+<h1 class="FormTitle">Update User Information</h1>
+	<form class="Search2" id="Registration" action="update_customers.php" method="post">
+		<div>
+		<label for="CustomerID">Customer ID:</label>
+		<input type="number" name="CustomerID" placeholder="type CustomerID" size="1" required>
+		</div>
+		<div>
+			<label for="Attribute">Field to update:</label>
+			<select name="Attribute" required>
+				<option value="" disabled selected>Attribute</option>
+				<option value="CustomerName">Customer Name</option>
+				<option value="CustomerAddress">Customer Address</option>
+				<option value="CustomerAge">Customer Age</option>
+			</select>
+		</div>
+        <div>
+		<label for="Value">Updated Value:</label>
+		<input type="text" name="Value" size="30" required>
+		</div>
+		<button>Submit</button>
+</form>	
 <h1 class="FormTitle">User Information:</h1>
 <table class="searchboxtable" align="center">
 		<tr>
