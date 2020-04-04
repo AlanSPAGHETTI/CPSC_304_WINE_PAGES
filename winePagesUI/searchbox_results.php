@@ -35,7 +35,7 @@
 <?php if ($resultCheck == 0) 
 	{
 ?>	
-	 <h3>Sorry, we could not find anything matching your query.</h3>
+	 <h3>Sorry, we could not find anything matching your query. :(</h3>
 <?php
 	} 
 ?>
