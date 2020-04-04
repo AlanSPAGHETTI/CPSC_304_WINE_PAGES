@@ -22,17 +22,17 @@
 </head>
 <body>
 	<div class="header">
-	<p><span>Wine / Pages <span>| CPSC 304</span><span><img src="logo.png"></p>
+	<p><span>Wine / Pages <span>| Admin Page</span><span><img src="logo.png"></p>
     </div>
   <div class="topnav">
   <a class="active" href="index.php">Home</a>
   <form class="searchbox" id="searchbox" action="searchbox_results.php" method="post">
-  	<input name="search_keyword" type="text" placeholder="Search our local wines...">
+  	<input name="search_keyword" type="text" placeholder="Browse inventory...">
   	<button type="submit"><i class="fa fa-search"></i></button>
   </form>
-  <a href="uiRegistration.php">Customer Registration</a>
-  <a href="uiFavourite.php">Favourites</a>
-  <a href="uiAdmin.php">Administrator's Page</a>
+  <a href="uiRegistration.php">Manage Users</a>
+  <a href="uiFavourite.php">Manage Favorites</a>
+  <a href="uiInventory.php">Inventory Stats</a>
 </div>
 <?php 
 if ($resultCheck > 0) {
