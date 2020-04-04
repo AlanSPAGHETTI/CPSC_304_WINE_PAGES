@@ -29,11 +29,23 @@
   <a href="uiFavourite.php">Manage Favorites</a>
   <a href="uiInventory.php">Inventory Stats</a>
 </div>
+
+
+
 <h1 class="FormTitle">Remove User</h1>
 	<form class="Search2" id="Registration" action="delete_customers.php" method="post">
-		<div>
-		<label for="CustomerID">Customer ID:</label>
-		<input type="number" name="CustomerID" placeholder="type CustomerID" size="1" required>
+        <div>
+			<label for="CustomerID">Customer ID:</label>
+			<?php 
+				echo '<select name="CustomerID">';
+				while($row=mysqli_fetch_assoc($result))
+					{	
+   					 echo '<option value="' . $row['CustomerID'] . '">' 
+        			. htmlspecialchars($row['CustomerID']) 
+        			. '</option>';
+					}
+				echo '</select>';
+			?>
 		</div>
 
 		<button>Submit</button>
