@@ -57,7 +57,7 @@ border-bottom: 3px solid #593f2a;
  }
 
  .FormTitle {
-  width: 50%;
+  width: 70%;
   text-align: left;
  }
  .OutputTitle {
@@ -82,6 +82,7 @@ form {
 	border: 2px solid #4d6e53;
 	border-radius: 4px;
 }
+
 
 body {
   background-image: url('uiBackground.jpg');
