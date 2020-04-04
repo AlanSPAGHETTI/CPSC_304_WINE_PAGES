@@ -37,11 +37,19 @@
 <?php 
 if ($resultCheck > 0) {
 ?>
-<h3>New customer registration was successful!</h3>
+<h2>New customer registration was successful!</h2>
+<?php 
+header( "refresh:2; url=uiRegistration.php" ); 
+exit; 
+?>
 <?php	
 } elseif ($resultCheck == 0) {
 ?>
-<h3>New customer registration failed. Please try again.</h3>
+<h2>New customer registration failed. Please try again.</h2>
+<?php 
+header( "refresh:2; url=uiRegistration.php" ); 
+exit; 
+?>
 <?php	
 }
 ?>

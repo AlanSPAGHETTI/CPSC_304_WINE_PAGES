@@ -29,7 +29,7 @@
   <a href="uiFavourite.php">Manage Favorites</a>
   <a href="uiInventory.php">Inventory Stats</a>
 </div>
-<h1 class="FormTitle">Add New Users</h1>
+<h1 class="FormTitle">Add New User</h1>
 	<form class="Search2" id="Registration" action="insert_customers.php" method="post">
 		<div>
 		<label for="FullName">Full Name:</label>
@@ -48,6 +48,15 @@
 
 		<button>Submit</button>
 	</form>
+<h1 class="FormTitle">Remove User</h1>
+	<form class="Search2" id="Registration" action="delete_customers.php" method="post">
+		<div>
+		<label for="CustomerID">Customer ID:</label>
+		<input type="number" name="CustomerID" placeholder="type CustomerID" size="1" required>
+		</div>
+
+		<button>Submit</button>
+	</form>	
 <h1 class="FormTitle">User Information:</h1>
 <table class="searchboxtable" align="center">
 		<tr>
