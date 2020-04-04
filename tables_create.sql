@@ -65,7 +65,7 @@ CREATE TABLE WINERY_BRANCH
 # The following commands handles creation of tertiary tables
 CREATE TABLE FAVORITE
 (
-    FavoriteID INT NOT NULL,
+    FavoriteID INT NOT NULL AUTO_INCREMENT,
     CustomerID INT NOT NULL REFERENCES CUSTOMER(CustomerID) ON DELETE RESTRICT,
     WineID     INT NOT NULL REFERENCES Wine(WineID)         ON DELETE RESTRICT,
     DateAdded  INT NOT NULL,
