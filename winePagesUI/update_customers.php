@@ -14,8 +14,6 @@
 	}
 	mysqli_query($conn, $sql);	
 	$sql_verify = "SELECT * FROM CUSTOMER WHERE CustomerID=$customerID;";
-	//$result = mysqli_query($conn, $sql_verify);
-	//$resultCheck = mysqli_num_rows($result);	
 	$resultCheck = 1;
 ?>
 <!DOCTYPE html>
@@ -41,6 +39,7 @@
   <a href="uiRegistration.php">Manage Users</a>
   <a href="uiFavourite.php">Manage Favorites</a>
   <a href="uiInventory.php">Inventory Stats</a>
+  <a href="uiQuickAccess.php">Quick Access Panel</a>
 </div>
 <?php 
 

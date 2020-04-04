@@ -28,6 +28,7 @@
   <a href="uiRegistration.php">Manage Users</a>
   <a href="uiFavourite.php">Manage Favorites</a>
   <a href="uiInventory.php">Inventory Stats</a>
+  <a href="uiQuickAccess.php">Quick Access Panel</a>
 </div>
 <h1 class="FormTitle">Add New User</h1>
 	<form class="Search2" id="Registration" action="insert_customers.php" method="post">

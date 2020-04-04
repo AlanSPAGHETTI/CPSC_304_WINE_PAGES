@@ -30,6 +30,7 @@
   <a href="uiRegistration.php">Manage Users</a>
   <a href="uiFavourite.php">Manage Favorites</a>
   <a href="uiInventory.php">Inventory Stats</a>
+  <a href="uiQuickAccess.php">Quick Access Panel</a>
 </div>
 	<h1>Your Search Results For: <?php echo "'" . "$keyword" . "'"; ?></h1>
 <?php if ($resultCheck == 0) 

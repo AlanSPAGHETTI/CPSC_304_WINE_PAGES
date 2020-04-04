@@ -22,6 +22,7 @@
   <a href="uiRegistration.php">Customer Registration</a>
   <a href="uiFavourite.php">Favourites</a>
   <a href="uiAdmin.php">Administrator's Page</a>
+  <a href="uiQuickAccess.php">Quick Access Panel</a>
 </div>
 <h1 class="FormTitle">Query [Admins Only]</h1>
 	<form class="RegistrationForm" id="Registration">

@@ -21,34 +21,10 @@
   <a href="uiRegistration.php">Manage Users</a>
   <a href="uiFavourite.php">Manage Favorites</a>
   <a href="uiInventory.php">Inventory Stats</a>
+  <a href="uiQuickAccess.php">Quick Access Panel</a>
 </div>
 
-<h1 class="FormTitle">Browse our local wines!</h1>
-	<form class="Search2" id="AlternateSearch">
+<h1 class="FormTitle">Welcome to the Wine Pages Admin Page!</h1>
 
-		<div>
-			Grape Color:
-			<label for="Red">Red</label>
-			<input id="Red" type="radio" name="Color" value="Red" required>
-			<label for="Purple">Purple</label>
-			<input id="Purple" type="radio" name="Color" value="Purple" required>
-			<label for="Green">Green</label>
-			<input id="Green" type="radio" name="Color" value="Green" required>
-			<label for="Black">Black</label>
-			<input id="Black" type="radio" name="Color" value="Black" required>
-		</div>
-		<div>
-			<label for="WineryName">Winery Name:</label>
-			<select name="WineryName">
-				<option>Winery</option>
-				<option>St. Hubertus & Oak Bay Estate</option>
-				<option>Gehringer Brothers Estate</option>
-				<option>King Estate Suppliers</option>
-				<option>The Durell Vineyard</option>
-				<option>Chateau Montelena Estate</option>
-			</select>
-		</div>
-		<button>Search</button>
-	</form>
 </body>
 </html>
