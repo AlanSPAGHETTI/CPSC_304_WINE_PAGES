@@ -32,9 +32,19 @@
 <h1 class="FormTitle">Update User Information</h1>
 	<form class="Search2" id="Registration" action="update_customers.php" method="post">
 		<div>
-		<label for="CustomerID">Customer ID:</label>
-		<input type="number" name="CustomerID" placeholder="type CustomerID" size="1" required>
+			<label for="CustomerID">Customer ID:</label>
+			<?php 
+				echo '<select name="CustomerID">';
+				while($row=mysqli_fetch_assoc($result))
+					{	
+   					 echo '<option value="' . $row['CustomerID'] . '">' 
+        			. htmlspecialchars($row['CustomerID']) 
+        			. '</option>';
+					}
+				echo '</select>';
+			?>
 		</div>
+
 		<div>
 			<label for="Attribute">Field to update:</label>
 			<select name="Attribute" required>
