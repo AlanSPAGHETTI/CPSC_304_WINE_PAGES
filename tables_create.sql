@@ -1,7 +1,7 @@
 # The following commands handles creation of primary tables
 CREATE TABLE CUSTOMER
 (
-    CustomerID      INT          NOT NULL,
+    CustomerID      INT          NOT NULL AUTO_INCREMENT,
     CustomerName    VARCHAR(255) NOT NULL,
     CustomerAddress VARCHAR(255) NOT NULL,
     CustomerAge     INT          NOT NULL,
