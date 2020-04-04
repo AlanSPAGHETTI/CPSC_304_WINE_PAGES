@@ -24,20 +24,17 @@
    <a href="uiQuickAccess.php">Quick Access Panel</a>
 </div>
 
-<h1 class="FormTitle">Welcome to the Wine Pages Admin Page!</h1>
+<h2 class="FormTitle">Quick Access Panel</h2>	
 
-<h3>Quick Access Panel:</h3>
-	
-	<form class="Search2" id="AlternateSearch">
-
+	<form class="Search2" id="AlternateSearch" action="selection_query.php" method="post">
+        <h4>Selection Query for the Wine Table:</h4>
 		<div>
-			Selection Query for Wine Table:
 			<label for="FieldOne">Select a Field to Display:</label>
 			<select name="FieldOne" required>
-				<option value="" disable selected>Attribute</option>
+				<option value="" disabled selected>Disp. Attr</option>
 				<option value="WineID">WineID</option>
 				<option value="WineryID">WineryID</option>
-				<option value="WineryName">WineName</option>
+				<option value="WineName">WineName</option>
 				<option value="WineYear">WineYear</option>
 				<option value="WineCost">WineCost</option>
 				<option value="WineABV">WineABV</option>
@@ -45,45 +42,34 @@
 		</div>
 		<div>
 			<label for="FieldTwo">Select a Comparison Field:</label>
-			<select name="FieldTwo">
-				<option value="" disable selected>Attribute</option>
-				<option>WineID</option>
-				<option>WineryID</option>
-				<option>WineYear</option>
-				<option>WineCost</option>
-				<option>WineABV</option>
+			<select name="FieldTwo" required>
+				<option value="" disabled selected>Comp. Attr</option>
+				<option value="WineID">WineID</option>
+				<option value="WineryID">WineryID</option>
+				<option value="WineYear">WineYear</option>
+				<option value="WineCost">WineCost</option>
+				<option value="WineABV">WineABV</option>
 			</select>
 		</div>
-		Where the Comparison Field is:
-
+		<div>
+			<label for="Operator">Where the Comparison Field is:</label>
+			<select name="Operator" required>
+				<option value="" disabled selected>Operator</option>
+				<option value="<"><</option>
+				<option value=">">></option>
+				<option value=">=">>=</option>
+				<option value="<="><=</option>
+				<option value="=">=</option>
+				<option value="<>">!=</option>
+			</select>
+		</div>
+		<div>
+		<label for="Value">Than/To the Following Value:</label>
+		<input type="text" name="Value" size="30" required>
+		</div>
 		<button>Search</button>
 	</form>
 
-	<form class="Search2" id="AlternateSearch">
 
-		<div>
-			Grape Color:
-			<label for="Red">Red</label>
-			<input id="Red" type="radio" name="Color" value="Red" required>
-			<label for="Purple">Purple</label>
-			<input id="Purple" type="radio" name="Color" value="Purple" required>
-			<label for="Green">Green</label>
-			<input id="Green" type="radio" name="Color" value="Green" required>
-			<label for="Black">Black</label>
-			<input id="Black" type="radio" name="Color" value="Black" required>
-		</div>
-		<div>
-			<label for="WineryName">Winery Name:</label>
-			<select name="WineryName">
-				<option>Winery</option>
-				<option>St. Hubertus & Oak Bay Estate</option>
-				<option>Gehringer Brothers Estate</option>
-				<option>King Estate Suppliers</option>
-				<option>The Durell Vineyard</option>
-				<option>Chateau Montelena Estate</option>
-			</select>
-		</div>
-		<button>Search</button>
-	</form>
 </body>
 </html>
