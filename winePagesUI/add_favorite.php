@@ -3,7 +3,7 @@
 include_once 'includes/connect.php';
 $connection = OpenCon();
 
-$customerId = $_POST['FullName'];
+$customerId = $_POST['CustId'];
 $customerExistsSQL = "SELECT * FROM customer WHERE CustomerID=?;";
 $customerExists = checkIfExists($connection, "customer", $customerId, $customerExistsSQL);
 // if the customer exists, check that the wine exists
