@@ -29,57 +29,18 @@
   <a href="uiFavourite.php">Manage Favorites</a>
   <a href="uiInventory.php">Inventory Stats</a>
 </div>
-<h1 class="FormTitle">Add New User</h1>
-	<form class="Search2" id="Registration" action="insert_customers.php" method="post">
-		<div>
-		<label for="FullName">Full Name:</label>
-		<input type="text" name="FullName" placeholder="John P Smith" size="30" required>
-		</div>
-
-		<div>
-		<label for="Address">Address:</label>
-		<input type="text" name="Address" placeholder="2222 Adelaide St, Toronto" size="30" required>
-		</div>
-
-		<div>
-		<label for="Age">Age:</label>
-		<input type="number" name="Age" placeholder="21" size="1" min="1" max="130" required>
-		</div>
-
-		<button>Submit</button>
+<h1 class="FormTitle">User Management Control Panel</h1>
+	<form class="Search3" id="Registration" action="insert_customers_landing.php" method="post">
+		<button>Add User</button>
 	</form>
-<h1 class="FormTitle">Remove User</h1>
-	<form class="Search2" id="Registration" action="delete_customers.php" method="post">
-		<div>
-		<label for="CustomerID">Customer ID:</label>
-		<input type="number" name="CustomerID" placeholder="type CustomerID" size="1" required>
-		</div>
-
-		<button>Submit</button>
+	<form class="Search3" id="Registration" action="delete_customers_landing.php" method="post">
+		<button>Remove User</button>
 	</form>	
-<h1 class="FormTitle">Update User Information</h1>
-	<form class="Search2" id="Registration" action="update_customers.php" method="post">
-		<div>
-		<label for="CustomerID">Customer ID:</label>
-		<input type="number" name="CustomerID" placeholder="type CustomerID" size="1" required>
-		</div>
-		<div>
-			<label for="Attribute">Field to update:</label>
-			<select name="Attribute" required>
-				<option value="" disabled selected>Attribute</option>
-				<option value="CustomerName">Customer Name</option>
-				<option value="CustomerAddress">Customer Address</option>
-				<option value="CustomerAge">Customer Age</option>
-			</select>
-		</div>
-        <div>
-		<label for="Value">Updated Value:</label>
-		<input type="text" name="Value" size="30" required>
-		</div>
-		<button>Submit</button>
+	<form class="Search3" id="Registration" action="update_customers_landing.php" method="post">
+		<button>Update User Information</button>
 </form>	
-<h1 class="FormTitle">User Information:</h1>
-<table class="searchboxtable" align="center">
+<h1 class="FormTitle">User Database:</h1>
+<table class="databasetable" align="left">
 		<tr>
 			<th>Customer ID</th>
 			<th>Customer Name</th>
