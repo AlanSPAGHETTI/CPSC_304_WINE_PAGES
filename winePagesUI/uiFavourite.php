@@ -57,13 +57,13 @@ $result = mysqli_query($conn, $sql);
 <h1>Add a favorite for a customer!</h1>
     <form class="Search2" id="Favorite" action="add_favorite.php" method="post">
         <div>
-            <label for="FullName">Customer ID:</label>
-            <input type="text" name="FullName" placeholder="John P Smith" size="30" required>
+            <label for="CustomerID">Customer ID:</label>
+            <input type="number" name="CustId" required>
         </div>
 
         <div>
-            <label for="Age">Wine ID:</label>
-            <input type="text" name="WineName" placeholder="Pinot Noir" size="50" required>
+            <label for="WineID">Wine ID:</label>
+            <input type="number" name="WineName" required>
         </div>
 
         <button>Submit</button>
