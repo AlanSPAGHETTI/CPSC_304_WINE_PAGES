@@ -34,6 +34,7 @@ $result = mysqli_query($conn, $sql);
     <table class="searchboxtable" align="center">
         <tr>
             <th>Customer Name</th>
+            <th>Customer ID</th>
             <th>Wine Name</th>
             <th>Wine Year</th>
             <th>Wine Cost</th>
@@ -45,12 +46,13 @@ $result = mysqli_query($conn, $sql);
             ?>
             <tr>
                 <td><?php echo $rows['CustomerName']; ?></td>
+                <td><?php echo $rows['CustomerID']?></td>
                 <td><?php echo $rows['WineName']; ?></td>
                 <td><?php echo $rows['WineYear']; ?></td>
                 <td><?php echo $rows['WineCost']; ?></td>
                 <td><form id="favDelete" action="delete_favorite.php" method="post">
                         <div hidden>
-                            <input type="text" name="custFavToDelete" value=<?php echo $rows['CustomerName']; ?>>
+                            <input type="text" name="custIdFavToDelete" value=<?php echo $rows['CustomerID']; ?>>
                             <input type="text" name="wineFavToDelete" value=<?php echo $rows['WineName']; ?>>
                             <input type="text" name="yearFavToDelete" value=<?php echo $rows['WineYear']; ?>>
                         </div>
