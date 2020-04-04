@@ -86,13 +86,9 @@ $result = mysqli_query($conn, $sql);
 include_once 'includes/connect.php';
 $connection = OpenCon();
 
-$customerName = $_POST['custFavToDelete'];
 $wineName = $_POST['wineFavToDelete'];
 $wineYear = $_POST['yearFavToDelete'];
-
-// get customerId
-$custIdSql = mysqli_query($connection,"SELECT CustomerID FROM customer WHERE CustomerName LIKE '%$customerName%';");
-$custId = mysqli_fetch_array($custIdSql)['CustomerID'];
+$custId = $_POST['custIdFavToDelete'];
 
 // get wineID
 $wineIdSql = mysqli_query($connection,"SELECT WineID FROM wine WHERE WineName LIKE '%$wineName%' AND WineYear LIKE '%$wineYear%';");
