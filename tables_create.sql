@@ -49,7 +49,7 @@ CREATE TABLE WINERY_REP
 (
     WineryRepID   INT          NOT NULL,
     WineryRepName VARCHAR(255) NOT NULL,
-    WineryID      INT          REFERENCES WINERY(WineryID) ON DELETE RESTRICT NOT NULL,
+    WineryID      INT          NOT NULL REFERENCES WINERY(WineryID) ON DELETE RESTRICT,
     PRIMARY KEY (WineryRepID)
 );
 
@@ -58,7 +58,7 @@ CREATE TABLE WINERY_BRANCH
     WineryBranchID      INT          NOT NULL,
     WineryBranchName    VARCHAR(255) NOT NULL,
     WineryBranchAddress VARCHAR(255) NOT NULL,
-    WineryID            INT          REFERENCES WINERY(WineryID) ON DELETE RESTRICT NOT NULL,
+    WineryID            INT          NOT NULL REFERENCES WINERY(WineryID) ON DELETE RESTRICT,
     PRIMARY KEY (WineryBranchID)
 );
 
