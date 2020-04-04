@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The Wine Pages</title>
+	<title>The Wine Pages: Search Results</title>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -42,6 +42,7 @@
 	<table class="searchboxtable" align="left">
 		<tr>
 			<th>Name</th>
+			<th>Wine ID</th>
 			<th>Vintage</th>
 			<th>Cost</th>
 			<th>Alcohol Content (%)</th>
@@ -52,6 +53,7 @@
 	?>
 			<tr>
 				<td><?php echo $rows['WineName']; ?></td>
+				<td><?php echo $rows['WineID']; ?></td>
 				<td><?php echo $rows['WineYear']; ?></td>
 				<td><?php echo $rows['WineCost']; ?></td>
 				<td><?php echo $rows['WineABV']; ?></td>
