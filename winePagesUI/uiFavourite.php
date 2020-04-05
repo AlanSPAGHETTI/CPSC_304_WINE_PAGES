@@ -28,6 +28,7 @@ $result = mysqli_query($conn, $sql);
   <a href="uiRegistration.php">Manage Users</a>
   <a href="uiFavourite.php">Manage Favorites</a>
   <a href="uiInventory.php">Inventory Stats</a>
+  <a href="uiQuickAccess.php">Quick Access Panel</a>
 </div>
 <h1 class="FormTitle">Customer Favourites!</h1>
 
