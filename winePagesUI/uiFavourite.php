@@ -30,6 +30,11 @@ $result = mysqli_query($conn, $sql);
   <a href="uiInventory.php">Inventory Stats</a>
   <a href="uiQuickAccess.php">Quick Access Panel</a>
 </div>
+    <h1 class="FormTitle">User Management Control Panel</h1>
+    <form class="Search3" id="Registration" action="insert_favorites_landing.php" method="post">
+        <button>Add Favorite</button>
+    </form>
+
 <h1 class="FormTitle">Customer Favourites!</h1>
 
     <table class="searchboxtable" align="center">
@@ -65,21 +70,6 @@ $result = mysqli_query($conn, $sql);
         ?>
 
     </table>
-
-<h1>Add a favorite for a customer!</h1>
-    <form class="Search2" id="Favorite" action="add_favorite.php" method="post">
-        <div>
-            <label for="CustomerID">Customer ID:</label>
-            <input type="number" name="CustId" required>
-        </div>
-
-        <div>
-            <label for="WineID">Wine ID:</label>
-            <input type="number" name="WineName" required>
-        </div>
-
-        <button>Submit</button>
-    </form>
 
 </body>
 </html>
