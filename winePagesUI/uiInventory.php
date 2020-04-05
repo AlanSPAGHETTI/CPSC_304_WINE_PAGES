@@ -1,9 +1,15 @@
 <?php
 include_once 'includes/connect.php';
 $conn = OpenCon();
-$sql = "SELECT MIN(WineCost), MAX(WineCost), AVG(WineCost) FROM WINE;";
+
+// here we have code for non-grouped summary stats
+$sql    = "SELECT MIN(WineCost), MAX(WineCost), AVG(WineCost) FROM WINE;";
 $result = mysqli_query($conn, $sql);
 $result = mysqli_fetch_assoc($result);
+
+// here we have code for grouped summary stats
+$sql_group    = "SELECT QUALITY.QualityName, MIN(WINE.WineCost), MAX(Wine.WineCost), AVG(Wine.WineCost) FROM WINE, WINE_HAS_QUALITY, QUALITY WHERE WINE.WineID = WINE_HAS_QUALITY.WineID AND WINE_HAS_QUALITY.QualityID = QUALITY.QualityID GROUP BY QUALITY.QualityName";
+$result_group = mysqli_query($conn, $sql_group);
 ?>
 <!DOCTYPE html>
 <html>
@@ -36,5 +42,30 @@ $result = mysqli_fetch_assoc($result);
 	<p>Least expensive wine: $<?php echo number_format($result["MIN(WineCost)"], 2); ?></p>
 	<p>Most expensive wine:  $<?php echo number_format($result["MAX(WineCost)"], 2); ?></p>
 	<p>Average cost of wine: $<?php echo number_format($result["AVG(WineCost)"], 2); ?></p>
+
+	<h1>Summary statistics for each type</h1>
+
+    <table class="searchboxtable" align="center">
+        <tr>
+            <th>Type name</th>
+            <th>Minimum price</th>
+            <th>Maximum price</th>
+            <th>Average price</th>
+        </tr>
+        <?php
+        while($row=mysqli_fetch_assoc($result_group))
+        {
+            ?>
+            <tr>
+                <td><?php echo $row['QualityName'];                          ?></td>
+                <td><?php echo number_format($row['MIN(WINE.WineCost)'], 2); ?></td>
+                <td><?php echo number_format($row['MAX(Wine.WineCost)'], 2); ?></td>
+                <td><?php echo number_format($row['AVG(Wine.WineCost)'], 2); ?></td>
+            </tr>
+            <?php
+        }
+        ?>
+    </table>
+
 </body>
 </html>
