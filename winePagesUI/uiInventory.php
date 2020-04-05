@@ -1,3 +1,10 @@
+<?php
+include_once 'includes/connect.php';
+$conn = OpenCon();
+$sql = "SELECT MIN(WineCost), MAX(WineCost), AVG(WineCost) FROM WINE;";
+$result = mysqli_query($conn, $sql);
+$result = mysqli_fetch_assoc($result);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,13 +30,11 @@
   <a href="uiFavourite.php">Manage Favorites</a>
   <a href="uiInventory.php">Inventory Stats</a>
   <a href="uiQuickAccess.php">Quick Access Panel</a>
-</div>
-<h1 class="FormTitle">Query [Admins Only]</h1>
-	<form class="RegistrationForm" id="Registration">
-		<input type="test" name="Query" placeholder="Type Query Here....">
-		<button>Submit</button>
-	</form>
-<h1 class="FormTitle">Output</h1>
-<textarea class="output" rows="4" cols="50" placeholder="Query output will magically appear here..."></textarea>
+	</div>
+
+	<h1>Summary statistics for all wines</h1>
+	<p>Least expensive wine: $<?php echo number_format($result["MIN(WineCost)"], 2); ?></p>
+	<p>Most expensive wine:  $<?php echo number_format($result["MAX(WineCost)"], 2); ?></p>
+	<p>Average cost of wine: $<?php echo number_format($result["AVG(WineCost)"], 2); ?></p>
 </body>
 </html>
