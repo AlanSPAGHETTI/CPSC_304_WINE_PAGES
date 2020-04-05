@@ -102,6 +102,44 @@
 		</div>
 		<button>Search</button>
 	</form>
+	<form class="Search2" action="join_query.php" method="post">
+        <h4>Join Query (on Grape and Quality tables)</h4>
+        <div>
+            <label for="FieldOne">Select a Field from the Quality table:</label>
+            <select name="FieldOne" required>
+                <option value="" disabled selected>Disp. Attr</option>
+                <option value="QualityID">QualityID</option>
+                <option value="QualityName">QualityName</option>
+                <option value="QualityAroma">QualityAroma</option>
+                <option value="QualityColor">QualityColor</option>
+                <option value="QualityFlavour">QualityFlavour</option>
+            </select>
+        </div>
+        <div>
+            <label for="FieldTwo">Select a Field from the Grape table:</label>
+            <select name="FieldTwo" required>
+                <option value="" disabled selected>Disp. Attr</option>
+                <option value="GrapeID">GrapeID</option>
+                <option value="GrapeName">GrapeName</option>
+                <option value="GrapeSize">GrapeSize</option>
+                <option value="GrapeColor">GrapeColor</option>
+            </select>
+        </div>
+        <div>
+            <label for="Operator">Where the Comparison Field is:</label>
+            <select name="Operator" required>
+                <option value="" disabled selected>Operator</option>
+                <option value="<"><</option>
+                <option value=">">></option>
+                <option value=">=">>=</option>
+                <option value="<="><=</option>
+                <option value="=">=</option>
+                <option value="<>">!=</option>
+            </select>
+        </div>
+        <button>Search</button>
+    </form>
+
 </div>
 </body>
 </html>
