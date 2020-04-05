@@ -30,54 +30,6 @@ $result = mysqli_query($conn, $sql);
         <a href="uiInventory.php">Inventory Stats</a>
     </div>
     <h1 class="FormTitle">Customer Favourites!</h1>
-
-    <table class="searchboxtable" align="center">
-        <tr>
-            <th>Customer Name</th>
-            <th>Wine Name</th>
-            <th>Wine Year</th>
-            <th>Wine Cost</th>
-            <th>Delete</th>
-        </tr>
-        <?php
-        while($rows=mysqli_fetch_assoc($result))
-        {
-            ?>
-            <tr>
-                <td><?php echo $rows['CustomerName']; ?></td>
-                <td><?php echo $rows['WineName']; ?></td>
-                <td><?php echo $rows['WineYear']; ?></td>
-                <td><?php echo $rows['WineCost']; ?></td>
-                <td><form id="favDelete" action="delete_favorite.php" method="post">
-                        <div hidden>
-                            <input type="text" name="custFavToDelete" value=<?php echo $rows['CustomerName']; ?>>
-                            <input type="text" name="wineFavToDelete" value=<?php echo $rows['WineName']; ?>>
-                            <input type="text" name="yearFavToDelete" value=<?php echo $rows['WineYear']; ?>>
-                        </div>
-                        <button>X</button>
-                    </form></td>
-            </tr>
-            <?php
-        }
-        ?>
-
-    </table>
-
-    <h1>Add a favorite for a customer!</h1>
-    <form class="Search2" id="Favorite" action="add_favorite.php" method="post">
-        <div>
-            <label for="CustomerID">Customer ID:</label>
-            <input type="number" name="CustId" required>
-        </div>
-
-        <div>
-            <label for="WineID">Wine ID:</label>
-            <input type="number" name="WineName" required>
-        </div>
-
-        <button>Submit</button>
-    </form>
-
     </body>
     </html>
 
@@ -85,6 +37,7 @@ $result = mysqli_query($conn, $sql);
 
 include_once 'includes/connect.php';
 $connection = OpenCon();
+$resultCheck = null;
 
 $wineName = $_POST['wineFavToDelete'];
 $wineYear = $_POST['yearFavToDelete'];
@@ -100,12 +53,24 @@ mysqli_query($connection, $deleteSql);
 $sql_verify = "SELECT * FROM favorite WHERE CustomerID = '$custId' AND WineID = '$wineId';";
 $result = mysqli_query($connection, $sql_verify);
 $resultCheck = mysqli_num_rows($result);
-if ($resultCheck == 0) {
-    echo '<p style="color: white;">
-        Favorite successfully deleted! Click on the "Manage Favorites" tab to see the change.
-        </p>';
-} else {
-    echo '<p style="color: red;">
-        Favorite could not be deleted
-        </p>';
+?>
+
+<?php
+if ($resultCheck <= 0) {
+    ?>
+    <h2>Favorite deletion was successful!</h2>
+    <?php
+    header( "refresh:2; url=uiFavourite.php" );
+    exit;
+    ?>
+    <?php
+} elseif ($resultCheck > 0) {
+    ?>
+    <h2>Favorite deletion failed. Please try again.</h2>
+    <?php
+    header( "refresh:2; url=uiFavourite.php" );
+    exit;
+    ?>
+    <?php
 }
+?>
