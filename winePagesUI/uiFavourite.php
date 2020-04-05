@@ -30,7 +30,7 @@ $result = mysqli_query($conn, $sql);
   <a href="uiInventory.php">Inventory Stats</a>
   <a href="uiQuickAccess.php">Quick Access Panel</a>
 </div>
-    <h1 class="FormTitle">User Management Control Panel</h1>
+    <h1 class="FormTitle">Favorites Management Control Panel</h1>
     <form class="Search3" id="Registration" action="insert_favorites_landing.php" method="post">
         <button>Add Favorite</button>
     </form>
