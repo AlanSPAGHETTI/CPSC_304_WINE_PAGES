@@ -26,6 +26,7 @@
 
 <h2 class="FormTitle">Quick Access Panel</h2>	
 
+	<div>
 	<form class="Search2" id="AlternateSearch" action="selection_query.php" method="post">
         <h4>Selection Query for the Wine Table:</h4>
 		<div>
@@ -69,7 +70,33 @@
 		</div>
 		<button>Search</button>
 	</form>
-
-
+	</div>
+<div>
+<form class="Search2" id="AlternateSearch" action="projection_query.php" method="post">
+        <h4>Projection Query:</h4>
+		<div>
+			<label for="Table">Select a Table to Query:</label>
+			<select name="Table" required>
+				<option value="" disabled selected>Table</option>
+				<option value="customer">customer</option>
+				<option value="favorite">favorite</option>
+				<option value="grape">grape</option>
+				<option value="quality">quality</option>
+				<option value="storage">storage</option>
+				<option value="wine">wine</option>
+				<option value="winery">winery</option>
+				<option value="winery_branch">winery_branch</option>
+				<option value="winery_rep">winery_rep</option>
+				<option value="wine_made_from">wine_made_from</option>
+				<option value="wine_stored_at">wine_stored_at</option>
+			</select>
+		</div>
+		<div>
+		<label for="Field">Enter the name of a Field to Project:</label>
+		<input type="text" name="Field" size="30" required>
+		</div>
+		<button>Search</button>
+	</form>
+</div>
 </body>
 </html>
