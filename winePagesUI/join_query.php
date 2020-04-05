@@ -17,7 +17,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The Wine Pages: Search Results</title>
+	<title>The Wine Pages: Join Query Results</title>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -46,7 +46,7 @@
 <?php
 	} 
 ?>
-    <h1>Selection Query Result:</h1>
+    <h1>Join Query Result:</h1>
 	<table class="searchboxtable" align="left">
 		<tr>
             <th>GrapeID</th>
