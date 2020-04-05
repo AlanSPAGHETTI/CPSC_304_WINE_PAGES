@@ -25,7 +25,12 @@
 </div>
 
 <h2 class="FormTitle">Quick Access Panel</h2>	
-
+    <h3>Find all customers that have browsed all wines:</h3>
+    <div>
+	     <form class="Search3" id="Registration" action="division_query.php">
+		         <button>Perform Division Query</button>
+	      </form>
+    </div>
 	<div>
 	<form class="Search2" id="AlternateSearch" action="selection_query.php" method="post">
         <h4>Selection Query for the Wine Table:</h4>
