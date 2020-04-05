@@ -1,10 +1,3 @@
-<?php
-include_once 'includes/connect.php';
-$conn = OpenCon();
-$sql = "SELECT * FROM favorite, wine, customer WHERE favorite.WineID = wine.WineID AND customer.CustomerID = favorite.CustomerID;";
-$result = mysqli_query($conn, $sql);
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,44 +26,6 @@ $result = mysqli_query($conn, $sql);
 </div>
 <h1 class="FormTitle">Customer Favourites!</h1>
 
-<table class="searchboxtable" align="center">
-    <tr>
-        <th>Customer Name</th>
-        <th>Wine Name</th>
-        <th>Wine Year</th>
-        <th>Wine Cost</th>
-    </tr>
-    <?php
-    while($rows=mysqli_fetch_assoc($result))
-    {
-        ?>
-        <tr>
-            <td><?php echo $rows['CustomerName']; ?></td>
-            <td><?php echo $rows['WineName']; ?></td>
-            <td><?php echo $rows['WineYear']; ?></td>
-            <td><?php echo $rows['WineCost']; ?></td>
-        </tr>
-        <?php
-    }
-    ?>
-
-</table>
-
-<h1>Add a favorite for a customer!</h1>
-<form class="Search2" id="Favorite" action="add_favorite.php" method="post">
-    <div>
-        <label for="CustomerID">Customer ID:</label>
-        <input type="number" name="CustId" required>
-    </div>
-
-    <div>
-        <label for="WineID">Wine ID:</label>
-        <input type="number" name="WineName" required>
-    </div>
-
-    <button>Submit</button>
-</form>
-
 </body>
 </html>
 
@@ -78,6 +33,7 @@ $result = mysqli_query($conn, $sql);
 
 include_once 'includes/connect.php';
 $connection = OpenCon();
+$resultCheck = null;
 
 $customerId = $_POST['CustId'];
 $customerExistsSQL = "SELECT * FROM customer WHERE CustomerID=?;";
@@ -105,15 +61,6 @@ if (!$customerExists) {
         $sql_verify = "SELECT * FROM favorite WHERE CustomerID = '$customerId' AND WineID = '$wineId';";
         $result = mysqli_query($connection, $sql_verify);
         $resultCheck = mysqli_num_rows($result);
-        if ($resultCheck <= 0) {
-            echo '<p style="color: red;">
-            The favorite could not be added
-            </p>';
-        } else {
-            echo '<p style="color: white;">
-            Favorite successfully added!
-            </p>';
-        }
     }
 }
 
@@ -137,5 +84,25 @@ function checkIfExists($conn, $tableName, $data, $sqlToExecute) {
             return true;
         }
     }
+}
+?>
+
+<?php
+if ($resultCheck > 0) {
+    ?>
+    <h2>New favorite registration was successful!</h2>
+    <?php
+    header( "refresh:2; url=uiFavourite.php" );
+    exit;
+    ?>
+    <?php
+} elseif ($resultCheck == 0) {
+    ?>
+    <h2>New favorite registration failed. Please try again.</h2>
+    <?php
+    header( "refresh:2; url=uiFavourite.php" );
+    exit;
+    ?>
+    <?php
 }
 ?>
